@@ -14,15 +14,15 @@ package frc.robot;
  */
 public final class Constants {
 
-    public static final int kDriverControllerPort = 0;
+    public static final int kDriverControllerPort = 2;
 
     public static final int coralMotorPort = 5;
 
     public static class tankDriveConstants {
-        public static final int tLeftMotorPort = 1;
-        public static final int bLeftMotorPort = 2;
-        public static final int tRightMotorPort = 3;
-        public static final int bRightMotorPort = 4;
+        public static final int tLeftMotorPort = 14;
+        public static final int bLeftMotorPort = 15;
+        public static final int tRightMotorPort = 1;
+        public static final int bRightMotorPort = 0;
 
         public static double kTankP = 1;
         public static double kTankI = 0;
