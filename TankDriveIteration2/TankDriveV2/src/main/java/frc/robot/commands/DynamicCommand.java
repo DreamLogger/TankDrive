@@ -8,7 +8,8 @@ import frc.robot.subsystems.TankDriveSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 import java.util.function.Supplier;
 
-public class DyanmicCommand extends Command {
+/** An example command that uses an example subsystem. */
+public class DynamicCommand extends Command {
   @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
   private final TankDriveSubsystem m_tankDriveSubsystem;
   Supplier <Double> setSpeedLeft;
@@ -16,9 +17,9 @@ public class DyanmicCommand extends Command {
   /**
    * Creates a new ExampleCommand.
    *
-   * @param tankDriveSubsystem The subsystem used by this command.
+   * @param subsystem The subsystem used by this command.
    */
-  public DyanmicCommand(TankDriveSubsystem tankDriveSubsystem, Supplier <Double> new_SetSpeedLeft, Supplier <Double> new_SetSpeedRight) {
+  public DynamicCommand(TankDriveSubsystem tankDriveSubsystem, Supplier <Double> new_SetSpeedLeft, Supplier <Double> new_SetSpeedRight) {
     m_tankDriveSubsystem = tankDriveSubsystem;
     setSpeedLeft = new_SetSpeedLeft;
     setSpeedRight = new_SetSpeedRight;

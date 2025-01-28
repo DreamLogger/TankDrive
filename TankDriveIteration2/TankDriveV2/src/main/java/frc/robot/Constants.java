@@ -16,32 +16,19 @@ public final class Constants {
 
     public static final int kDriverControllerPort = 0;
 
-    public static final int coralMotorPort = 5;
-
     public static class tankDriveConstants {
-        public static final int tLeftMotorPort = 1;
-        public static final int bLeftMotorPort = 2;
-        public static final int tRightMotorPort = 3;
-        public static final int bRightMotorPort = 4;
+        public static final int tLeftMotorPort = 6;
+        public static final int bLeftMotorPort = 3;
+        public static final int tRightMotorPort = 1;
+        public static final int bRightMotorPort = 10;
 
         public static double kTankP = 1;
         public static double kTankI = 0;
         public static double kTankD = 0;
     }
 
-    public static class elevatorConstants{
-        public static final int elevatorPort = 6;
-        public static final double maxHeight = 10;
-        public static final double minHeight= 2;
-        public static final double maxElevatorSpeed = 0.5;
-        public static final double maxReverseElevatorSpeed = -0.5 ;
-
-        public static final double kElevatorP = 1.0;
-        public static final double kElevatorI = 0.0;
-        public static final double kElevatorD = 0.0;
-        public static final double kElevatorG = 0.3; //motor output required to hold elevator at constant height, fights gravity
-        
-    }
-
+    public static class coralOutputConstants {
+        public static final int coralMotorPort = 2;
+        public static final double setShootingSpeed = -0.3;
+  }
 }
-
